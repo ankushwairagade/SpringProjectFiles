@@ -1,0 +1,11 @@
+package com.ankush.thingspeaks.ThingsSpeaks.service;
+
+import java.util.List;
+
+import com.ankush.thingspeaks.ThingsSpeaks.entities.DataObj;
+
+public interface DataService {
+
+	public List<DataObj> getAllObj();
+	
+}

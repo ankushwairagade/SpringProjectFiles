@@ -1,0 +1,5 @@
+package com.ankush.thingspeaks.ThingsSpeaks.service;
+
+public class DataServiceImplementation implements DataService{
+
+}

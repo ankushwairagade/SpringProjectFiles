@@ -1,0 +1,44 @@
+package com.ankush.thingspeaks.ThingsSpeaks.entities;
+
+import java.util.List;
+
+public class DataObj {
+
+	List<Integer> field1;
+	List<Integer> field2;
+	int Uid;
+	public List<Integer> getField1() {
+		return field1;
+	}
+	public void setField1(List<Integer> field1) {
+		this.field1 = field1;
+	}
+	public List<Integer> getField2() {
+		return field2;
+	}
+	public void setField2(List<Integer> field2) {
+		this.field2 = field2;
+	}
+	public int getUid() {
+		return Uid;
+	}
+	public void setUid(int uid) {
+		Uid = uid;
+	}
+	public DataObj(List<Integer> field1, List<Integer> field2, int uid) {
+		this.field1= new Arraylist<>();
+		this.field2= new Arraylist<>();
+		this.field1 = field1;
+		this.field2 = field2;
+		Uid = uid;
+	}
+	public DataObj() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+
+	
+	
+	
+}

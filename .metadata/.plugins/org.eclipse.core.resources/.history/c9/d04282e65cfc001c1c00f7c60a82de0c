@@ -1,0 +1,31 @@
+package com.ankush.thingspeaks.ThingsSpeaks.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ankush.thingspeaks.ThingsSpeaks.service.DataService;
+
+
+
+@RestController
+public class MyController {
+	
+	@Autowired
+	DataService dataService;
+	
+	@GetMapping("/home")
+	public String home()
+	{
+		return "Welcome to ThingsSpeaks is home page ";
+	}
+	
+	// get all data fields
+	
+	@GetMapping("/fields")
+	public DataObj getAllfiled()
+	{
+		return this.dataService.getAllObj();
+	}
+	
+}

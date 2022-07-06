@@ -1,0 +1,11 @@
+package com.example.SpringREST.service;
+
+import java.util.List;
+
+import com.example.SpringREST.entities.Field;
+
+public interface FieldService {
+
+	public List<Field> getFields();
+	
+}

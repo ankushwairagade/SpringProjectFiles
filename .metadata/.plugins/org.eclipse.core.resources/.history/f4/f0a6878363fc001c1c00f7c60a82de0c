@@ -1,0 +1,82 @@
+package com.ankush.thingspeaks.ThingsSpeaks.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.ankush.thingspeaks.ThingsSpeaks.entities.DataObj;
+
+@Service
+public class DataServiceImplementation implements DataService{
+
+	List<DataObj> list;
+	
+	
+	
+	
+	public DataServiceImplementation() {
+		
+		  list = new ArrayList<DataObj>();
+		  
+		  List<Integer> li = new ArrayList<>();
+		  li.add(12); li.add(20); li.add(50);
+		 
+		 List<Integer> li1 = new ArrayList<>();
+		 li1.add(100); li1.add(400); li1.add(500);
+		 
+		 
+		list.add(new DataObj(li,li1,123));
+		list.add(new DataObj(li1,li,116));
+	}
+
+
+
+
+	@Override
+	public List<DataObj> getAllObj() {
+		
+		
+
+		return list;
+	}
+
+
+
+
+	@Override
+	public DataObj getObj(int Uid) {
+		DataObj re=null;
+		for(DataObj obj : list)
+		{
+			if(obj.getUid() == Uid)
+			{
+				re=obj; break;
+			}
+		}
+		
+		return re;
+		
+	}
+
+
+
+
+	@Override
+	public DataObj addField(DataObj data) {
+		
+		list.add(data);
+
+		return data;
+	}
+
+
+
+
+	@Override
+	public String getField(String Uid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

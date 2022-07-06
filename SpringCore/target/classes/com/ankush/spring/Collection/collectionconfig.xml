@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean class="com.ankush.spring.Collection.Emp" name="Emp">
+	 <property name="name" value="radhe" />
+ 
+<property name="phones">
+ <list>
+ <value> 987654321</value>
+ <value> 123456789</value>
+ <value> 192837465</value>
+ <null/>
+ </list>
+
+ </property>
+ 
+ <property name="address">
+ <set>
+ <value>kasturi nagar bg </value>
+ <value> bhopal</value>
+ <value> JK </value>
+</set>
+ </property>
+ 	
+<property name="courses">
+<map>
+	 <entry key="java" value="2month"/>
+	 <entry key="spring" value="5month"/>
+	 <entry key="Graphql" value="2month"/>
+</map>
+
+</property>
+
+</bean>
+</beans>

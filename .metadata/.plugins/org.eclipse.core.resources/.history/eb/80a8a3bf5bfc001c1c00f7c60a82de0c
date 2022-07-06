@@ -1,0 +1,9 @@
+package com.ankush.thingspeaks.ThingsSpeaks.entities;
+
+import java.util.List;
+
+public enum Data {
+	
+
+	
+}

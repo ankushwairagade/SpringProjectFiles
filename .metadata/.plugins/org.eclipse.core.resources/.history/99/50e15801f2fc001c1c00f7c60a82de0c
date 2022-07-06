@@ -1,0 +1,9 @@
+package com.ankush.thingspeaks.ThingsSpeaks.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+
+public interface DataDao extends JpaRepository<DataObj ,Long> {
+
+}

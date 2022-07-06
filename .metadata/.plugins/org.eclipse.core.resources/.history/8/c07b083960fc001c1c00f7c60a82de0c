@@ -1,0 +1,40 @@
+package com.ankush.thingspeaks.ThingsSpeaks.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.ankush.thingspeaks.ThingsSpeaks.entities.DataObj;
+
+@Service
+public class DataServiceImplementation implements DataService{
+
+	List<DataObj> list;
+	
+	
+	
+	
+	public DataServiceImplementation() {
+		/*
+		 * list = new ArrayList<DataObj>(); List<Integer> li = new ArrayList<>();
+		 * li.add(12); li.add(20); li.add(50);
+		 * 
+		 * List<Integer> li1 = new ArrayList<>(); li.add(100); li.add(400); li.add(500);
+		 * 
+		 */
+		list.add(new DataObj(,321,123));
+	
+	}
+
+
+
+
+	@Override
+	public List<DataObj> getAllObj() {
+			
+
+		return list;
+	}
+
+}

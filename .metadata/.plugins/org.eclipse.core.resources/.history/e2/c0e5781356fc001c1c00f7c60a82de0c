@@ -1,0 +1,59 @@
+package com.example.SpringREST.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.example.SpringREST.entities.Course;
+
+@Service
+public class CourseServiceImplementation implements CourseService {
+	
+	List<Course> list;
+	
+	
+
+	public CourseServiceImplementation() {
+		list = new ArrayList<Course>();
+		list.add(new Course(123,"java"," learn core java"));
+		list.add(new Course(112,"C++"," learn core c++"));
+		list.add(new Course(123,"python"," learn core python"));
+		list.add(new Course(123,"Spring"," learn core Spring"));
+		
+
+	}
+
+
+
+	@Override
+	public List<Course> getCourses() {
+		
+
+		
+		return list;
+	}
+
+
+
+	@Override
+	public Course getCourse(long courseId) {
+		
+		Course c = null;
+		
+		for(Course co : list)
+		{
+			if(co.getId()==courseId)
+			{
+				c=co; break;
+			}
+		}
+		
+		return c;
+	}
+
+
+
+	
+
+}

@@ -1,0 +1,102 @@
+package com.ankush.thingspeaks.ThingsSpeaks.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ankush.thingspeaks.ThingsSpeaks.dao.DataDao;
+import com.ankush.thingspeaks.ThingsSpeaks.entities.DataObj;
+import com.ankush.thingspeaks.ThingsSpeaks.service.DataService;
+
+
+
+
+
+@RestController
+public class MyController {
+	
+//	@Autowired
+//	private DataService dataService;
+
+
+	@Autowired
+	DataDao dataDao;
+	
+	@GetMapping("/home")
+	public String home()
+	{
+		return "Welcome to ThingsSpeaks is home page ";
+	}
+	
+	// get all data fields
+	
+	@GetMapping("/fields")
+	public List<DataObj> getAllfiled()
+	{
+		//return dataService.getAllObj();
+		
+		return dataDao.findAll();
+	}
+	
+	
+	@GetMapping("/fields/{Uid}")
+	public DataObj getOneObject(@PathVariable String Uid)
+	{
+		//return this.dataService.getObj(Integer.parseInt(Uid));
+		
+		 return dataDao.getOne(Integer.parseInt(Uid));
+	}
+	
+	
+	// add data into List
+	@PostMapping("/fields")
+	public DataObj addField(@RequestBody DataObj data)
+	{
+		//return this.dataService.addField(data);
+		
+		return dataDao.save(data);
+	}
+	
+	
+	@PutMapping("/fields/{Uid}")
+	public DataObj updateField(@RequestBody DataObj data)
+	{
+		//return this.dataService.updateField(data);
+		dataDao.save(data);
+		return data;
+	}
+	
+	
+	@DeleteMapping("/fields/{Uid}")
+	public String deleteField(@PathVariable String Uid)
+	{
+		
+		
+		/*
+		 * try { this.dataService.getField(Integer.parseInt(Uid)); return new
+		 * ResponseEntity<>(HttpStatus.OK);
+		 * 
+		 * }catch(Exception e) { return new
+		 * ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+		 * 
+		 * }
+		 */
+		
+		DataObj o =dataDao.getOne(Integer.parseInt(Uid));
+		dataDao.delete(o);
+		return "Deleted ";
+	}
+	
+	
+	
+	
+}

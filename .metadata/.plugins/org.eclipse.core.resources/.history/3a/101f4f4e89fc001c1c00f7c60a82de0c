@@ -1,0 +1,5 @@
+
+# changing the server port   server.port=----
+
+#database configuration:mysql
+spring.datasource.url=jdbc:mysql://localhost:3306/springjdbc

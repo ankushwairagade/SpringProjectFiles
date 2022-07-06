@@ -1,0 +1,22 @@
+package com.ankush.thingspeaks.ThingsSpeaks.service;
+
+import java.util.List;
+
+import com.ankush.thingspeaks.ThingsSpeaks.entities.DataObj;
+
+public class DataServiceImplementation implements DataService{
+
+	List<DataObj> list;
+	
+	
+	
+	
+	@Override
+	public DataObj getAllObj() {
+			
+
+		
+		return new DataObj();
+	}
+
+}

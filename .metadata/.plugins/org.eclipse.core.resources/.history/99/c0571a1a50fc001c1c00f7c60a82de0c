@@ -1,0 +1,29 @@
+package com.example.SpringREST.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.example.SpringREST.entities.Field;
+
+public class FieldServiceImplementation implements FieldService{
+
+	List<Field> list;
+	
+	public FieldServiceImplementation()
+	{
+		list= new ArrayList<>();
+		list.add(new Field(32));
+		list.add(new Field(43));
+		list.add(new Field(40));
+		list.add(new Field(100));
+	}
+	
+	
+	@Override
+	public List<Field> getFields() {
+
+		
+	return null;
+	}
+
+}

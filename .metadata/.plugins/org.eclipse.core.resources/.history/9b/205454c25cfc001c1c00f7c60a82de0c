@@ -1,0 +1,6 @@
+package com.ankush.thingspeaks.ThingsSpeaks.service;
+
+public interface DataService {
+
+	public DataObj getAllObj();
+}

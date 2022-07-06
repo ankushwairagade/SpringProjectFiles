@@ -1,0 +1,5 @@
+package com.example.SpringREST.controller;
+
+public class MyController {
+
+}

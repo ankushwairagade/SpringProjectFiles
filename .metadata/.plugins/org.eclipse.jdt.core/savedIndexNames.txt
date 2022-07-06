@@ -1,0 +1,18 @@
+INDEX VERSION 1.131+/home/kapture/Documents/workspace-sts-3.9.18.RELEASE/.metadata/.plugins/org.eclipse.jdt.core
+3365954194.index
+3634940542.index
+3742465463.index
+1861426573.index
+2311943822.index
+3159458685.index
+3426180447.index
+2514669989.index
+2178698529.index
+3744439202.index
+3035245455.index
+1865797976.index
+2107657384.index
+1495219798.index
+2685128172.index
+2608123431.index
+456219767.index

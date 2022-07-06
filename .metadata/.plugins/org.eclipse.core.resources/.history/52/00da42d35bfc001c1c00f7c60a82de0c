@@ -1,0 +1,20 @@
+package com.ankush.thingspeaks.ThingsSpeaks.entities;
+
+import java.util.List;
+
+public class DataObj {
+
+	List<Integer> field1;
+	List<Integer> field2;
+	List<Integer> field3;
+	List<Integer> field4;
+	List<Integer> field5;
+	List<Integer> field6;
+	List<Integer> field7;
+	List<Integer> field8;
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,5 @@
+package com.ankush.thingspeaks.ThingsSpeaks.entities;
+
+public class DataObj {
+
+}

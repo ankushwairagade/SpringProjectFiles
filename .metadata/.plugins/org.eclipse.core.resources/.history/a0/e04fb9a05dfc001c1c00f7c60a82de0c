@@ -1,0 +1,15 @@
+package com.ankush.thingspeaks.ThingsSpeaks.service;
+
+import com.ankush.thingspeaks.ThingsSpeaks.entities.DataObj;
+
+public class DataServiceImplementation implements DataService{
+
+	@Override
+	public DataObj getAllObj() {
+		
+
+		
+		return new DataObj();
+	}
+
+}

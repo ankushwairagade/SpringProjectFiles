@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+/home/kapture/Documents/workspace-sts-3.9.18.RELEASE/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1130652758.index
+/webooo/src/main/resources
+/home/kapture/Documents/workspace-sts-3.9.18.RELEASE/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1853922850.index
+/webapp/src/main/java
+/home/kapture/Documents/workspace-sts-3.9.18.RELEASE/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2271550867.index
+/webapp/src/main/resources
+/home/kapture/Documents/workspace-sts-3.9.18.RELEASE/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/437737949.index
+/webooo/src/main/resources

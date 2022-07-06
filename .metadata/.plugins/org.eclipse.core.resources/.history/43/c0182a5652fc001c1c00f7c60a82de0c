@@ -1,0 +1,5 @@
+package com.example.SpringREST.entities;
+
+public class Course {
+
+}
