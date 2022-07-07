@@ -1,2 +1,4 @@
 #Tomcat publish data
-#Tue Jul 05 15:33:30 IST 2022
+#Wed Jul 06 14:03:51 IST 2022
+org.eclipse.jst.j2ee.server\:springmvc=/home/kapture/Documents/IDE/sts-bundle/pivotal-tc-server/instances/base-instance/wtpwebapps/springmvc
+org.eclipse.jst.j2ee.server\:/binary\:/home/kapture/.m2/repository/org/springframework/spring-web/5.2.11.RELEASE/spring-web-5.2.11.RELEASE.jar=/home/kapture/Documents/IDE/sts-bundle/pivotal-tc-server/instances/base-instance/wtpwebapps/springmvc/WEB-INF/lib/spring-web-5.2.11.RELEASE.jar
